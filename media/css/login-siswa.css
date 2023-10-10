@@ -1,0 +1,282 @@
+/*//////////////////////////////////////////////////////////////////
+[ FONT ]*/
+
+@font-face {
+  font-family: "Abel";
+  src: url("../fonts/Abel.ttf");
+  src: url("../fonts/Abel.ttf") format("ttf"),
+    url("../fonts/Abel.ttf") format("truetype");
+}
+/*//////////////////////////////////////////////////////////////////
+  [ RESTYLE TAG ]*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Abel", sans-serif;
+}
+.navbar-atas {
+  background-color: #02364b;
+  border-color: #02364b;
+}
+.navbar-atas .navbar-brand {
+  color: #fff;
+}
+.navbar-atas .navbar-brand:focus,
+.navbar-atas .navbar-brand:hover {
+  color: #fff;
+  background-color: transparent;
+}
+.navbar-atas .navbar-text {
+  color: #ffffff;
+}
+.navbar-atas .navbar-nav > li > a {
+  color: #ffffff;
+}
+.navbar-atas .navbar-nav > li > a:focus,
+.navbar-atas .navbar-nav > li > a:hover {
+  color: #abd8d8;
+  background-color: transparent;
+}
+.navbar-atas .navbar-nav > .active > a,
+.navbar-atas .navbar-nav > .active > a:focus,
+.navbar-atas .navbar-nav > .active > a:hover {
+  color: #fff;
+  background-color: #275555ff;
+}
+.navbar-atas .navbar-nav > .disabled > a,
+.navbar-atas .navbar-nav > .disabled > a:focus,
+.navbar-atas .navbar-nav > .disabled > a:hover {
+  color: #444;
+  background-color: transparent;
+}
+.navbar-atas .navbar-toggle {
+  border-color: #333;
+}
+.navbar-atas .navbar-toggle:focus,
+.navbar-atas .navbar-toggle:hover {
+  background-color: #333;
+}
+.navbar-atas .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+.navbar-atas .navbar-collapse,
+.navbar-atas .navbar-form {
+  border-color: #101010;
+}
+.navbar-atas .navbar-nav > .open > a,
+.navbar-atas .navbar-nav > .open > a:focus,
+.navbar-atas .navbar-nav > .open > a:hover {
+  color: #fff;
+  background-color: #275555ff;
+}
+@media (max-width: 767px) {
+  .navbar-atas .navbar-nav .open .dropdown-menu > .dropdown-header {
+    border-color: #080808;
+  }
+  .navbar-atas .navbar-nav .open .dropdown-menu .divider {
+    background-color: #080808;
+  }
+  .navbar-atas .navbar-nav .open .dropdown-menu > li > a {
+    color: #9d9d9d;
+  }
+  .navbar-atas .navbar-nav .open .dropdown-menu > li > a:focus,
+  .navbar-atas .navbar-nav .open .dropdown-menu > li > a:hover {
+    color: #fff;
+    background-color: transparent;
+  }
+  .navbar-atas .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-atas .navbar-nav .open .dropdown-menu > .active > a:focus,
+  .navbar-atas .navbar-nav .open .dropdown-menu > .active > a:hover {
+    color: #fff;
+    background-color: #080808;
+  }
+  .navbar-atas .navbar-nav .open .dropdown-menu > .disabled > a,
+  .navbar-atas .navbar-nav .open .dropdown-menu > .disabled > a:focus,
+  .navbar-atas .navbar-nav .open .dropdown-menu > .disabled > a:hover {
+    color: #444;
+    background-color: transparent;
+  }
+}
+.navbar-atas .navbar-link {
+  color: #9d9d9d;
+}
+.navbar-atas .navbar-link:hover {
+  color: #fff;
+}
+.navbar-atas .btn-link {
+  color: #9d9d9d;
+}
+.navbar-atas .btn-link:focus,
+.navbar-atas .btn-link:hover {
+  color: #fff;
+}
+.navbar-atas .btn-link[disabled]:focus,
+.navbar-atas .btn-link[disabled]:hover,
+fieldset[disabled] .navbar-atas .btn-link:focus,
+fieldset[disabled] .navbar-atas .btn-link:hover {
+  color: #444;
+}
+
+body {
+  background: url("../img/bg-student.jpg") repeat;
+  overflow: hidden;
+  background-size: 70px 70px;
+}
+::selection {
+  background: rgba(74, 122, 255, 0.3);
+}
+.kontainer {
+  max-width: 440px;
+  padding: 0 20px;
+  margin: 80px auto;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.kotak {
+  top: 50%;
+  transform: translate(0, -50%);
+  position: absolute;
+  min-width: 400px;
+}
+.wrapper {
+  width: 100%;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.1);
+}
+.wrapper .title1 {
+  height: 90px;
+  background: #084eb6;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper .title {
+  height: 90px;
+  background: #084eb6;
+  border-radius: 5px 5px 0 0;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper form {
+  padding: 25px 35px;
+}
+.wrapper form .row {
+  height: 45px;
+  margin-bottom: 15px;
+  position: relative;
+}
+.wrapper form .row input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding-left: 60px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+form .row input:focus {
+  border-color: #084eb6;
+  box-shadow: inset 0px 0px 2px 2px rgba(26, 188, 156, 0.25);
+}
+form .row input::placeholder {
+  color: #999;
+}
+.wrapper form .row i {
+  position: absolute;
+  width: 47px;
+  height: 100%;
+  color: #fff;
+  font-size: 18px;
+  background: #084eb6;
+  border: 1px solid #00b7ff;
+  border-radius: 5px 0 0 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper form .pass {
+  margin: -8px 0 20px 0;
+}
+.wrapper form .pass a {
+  color: #00b7ff;
+  font-size: 17px;
+  text-decoration: none;
+}
+.wrapper form .pass a:hover {
+  text-decoration: underline;
+}
+.wrapper form .button input {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  padding-left: 0px;
+  background: #00b7ff;
+  border: 1px solid #00b7ff;
+  cursor: pointer;
+}
+form .button input:hover {
+  background: #00b7ff;
+}
+.wrapper form .signup-link {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 17px;
+}
+.wrapper form .signup-link a {
+  color: #00b7ff;
+  text-decoration: none;
+}
+form .signup-link a:hover {
+  text-decoration: underline;
+}
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+.btn-login {
+  border-radius: 5px;
+  /* width: 100px; */
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 5px 20px;
+  background: #084eb6;
+  border: 1px solid #084eb6;
+  cursor: pointer;
+}
+.btn-login:hover {
+  background-color: #00b7ff;
+  border-color: #fff;
+  color: #fff;
+  transition: 0.5s;
+}
